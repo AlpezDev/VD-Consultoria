@@ -68,10 +68,11 @@ html{
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 450px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    /*position: fixed;*/
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
@@ -106,66 +107,66 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #1CB698;
 }
-.sobremi{
+.nosotros{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+.nosotros .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+.nosotros h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.sobremi .contenido-seccion p{
+.nosotros .contenido-seccion p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+.nosotros .contenido-seccion p span{
     color: #1CB698;
-    font-weight: bold;
+    font-weight: bold;    
 }
-.sobremi .fila{
+.nosotros .fila{
     display: flex;
 }
-.sobremi .fila .col
+.nosotros .fila .col
 {
     width: 50%;
 }
-.sobremi .fila .col h3{
+.nosotros .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+.nosotros .fila .col ul{
     list-style: none;
 }
-.sobremi .fila .col ul li{
+.nosotros .fila .col ul li{
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+.nosotros .fila .col ul li strong{
     display: inline-block;
     color: #1CB698;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+.nosotros .fila .col ul li span{
     background-color: #1CB698;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+.nosotros .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
+.nosotros .fila .col .contenedor-intereses .interes{
+    width: 110px;
     height: 100px;
     background-color: #252A2E;
     border-radius: 10px;
@@ -175,14 +176,14 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+}.nosotros .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.nosotros .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.nosotros button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -195,7 +196,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.nosotros button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -205,7 +206,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.nosotros button:hover .overlay{
     width: 100%;
 }
 /* SECCION S K I L L S */
@@ -284,7 +285,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 100%;}
 }
 
 .skills .skill .photoshop{
@@ -311,7 +312,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .comunicacion{
@@ -347,7 +348,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 100%;}
 }
 
 .skills .skill .proyect{
@@ -358,75 +359,75 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
-/* SECCION CURRICULUM */
-.curriculum{
+/* SECCION SERVICIOS */
+.servicios{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.servicios .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+.servicios h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+.servicios .fila{
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+.servicios .fila .col{
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+.servicios .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+.servicios .fila .izquierda{
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+.servicios .fila .derecha{
     border-left: 2px solid #252A2E;
 }
-.curriculum .fila .item{
+.servicios .fila .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+.servicios .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+.servicios .fila .item .casa{
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+.servicios .fila .item .fecha{
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.servicios .fila .item p{
     line-height: 24px;
 }
-.curriculum .fila .izq{
+.servicios .fila .izq{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+.servicios .fila .der{
     border-left: 2px solid #1CB698;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+.servicios .fila .item .conectori{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -435,7 +436,7 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.servicios .fila .item .conectori .circuloi{
     display: block;
     height: 10px;
     width: 10px;
@@ -445,7 +446,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+.servicios .fila .item .conectord{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -454,7 +455,7 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+.servicios .fila .item .conectord .circulod{
     display: block;
     height: 10px;
     width: 10px;
@@ -464,39 +465,39 @@ html{
     position: relative;
     bottom: 4px;
 }
-/* SECCION PORTFOLIO */
-.portfolio{
+/* SECCION PRODUCTOS */
+.productos{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+.productos .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.portfolio h2{
+.productos h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+.productos .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
+.productos .galeria .proyecto{
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+.productos .galeria .proyecto img{
     width: 100%;
     display: block;
 }
-.portfolio .galeria .proyecto .overlay{
+.productos .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -511,14 +512,14 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
+.productos .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+.productos .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+.productos .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
@@ -668,10 +669,10 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
-    .sobremi .fila{
+    .nosotros .fila{
         display: block;
     }
-    .sobremi .fila .col{
+    .nosotros .fila .col{
         width: fit-content;
     }
 
@@ -685,24 +686,24 @@ footer .arriba{
         width: 100%;
     }
 
-    .curriculum .fila{
+    .servicios .fila{
         display: block;
     }
-    .curriculum .fila .col{
+    .servicios .fila .col{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .servicios .fila .derecha{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .productos .galeria{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+    .productos .galeria .proyecto{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+    .productos .galeria .proyecto img{
         width: 100%;
     }
     .contacto .fila{
