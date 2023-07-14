@@ -22,68 +22,12 @@
                 autoplay: true,
                 autoplaySpeed: 3000,
                 arrows: true,
-                dots: true,
+                dots: false,
                 prevArrow: '<button type="button" class="slick-prev">Previous</button>',
                 nextArrow: '<button type="button" class="slick-next">Next</button>'
             });
         });
     </script>
-
-    <style>
-        .slick-prev,
-        .slick-next {
-            font-size: 0;
-            line-height: 0;
-            position: absolute;
-            top: 50%;
-            display: block;
-            width: 20px;
-            height: 20px;
-            padding: 50px;
-            -webkit-transform: translate(0,-50%);
-            -ms-transform: translate(0,-50%);
-            transform: translate(0,-50%);
-            cursor: pointer;
-            color: transparent;
-            border: none;
-            outline: none;
-            background: transparent;
-            z-index: 1;
-        }
-
-            .slick-prev:before,
-            .slick-next:before {
-                font-family: 'slick';
-                font-size: 20px;
-                line-height: 1;
-                opacity: 0.75;
-                color: #f00;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-
-        .slick-prev {
-            left: 10px;
-        }
-
-        .slick-next {
-            right: 10px;
-        }
-
-        .slick-prev:before {
-            content: '←';
-        }
-
-        .slick-next:before {
-            content: '→';
-        }
-
-        .slider {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
-
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
