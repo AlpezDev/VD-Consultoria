@@ -10,6 +10,22 @@ function mostrarOcultarMenu(){
     }
 }
 
+var boton = document.getElementById('descargar');
+
+boton.onclick = function () {
+    var archivo = 'docs/Confecciones.pdf';
+    var enlace = document.createElement('a');
+
+    enlace.href = archivo;
+    enlace.target = '_blank';
+
+    document.body.appendChild(enlace);
+
+    enlace.click();
+
+    document.body.removeChild(enlace);
+};
+
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
@@ -36,6 +52,24 @@ function efectoHabilidades(){
 
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
+window.onscroll = function () {
+    restartAnimation()
     efectoHabilidades();
-} 
+}
+window.onload = function () {
+    var banner = document.querySelector('.contenido-banner');
+    banner.classList.add('active');
+};
+
+// Obtener el elemento de la superposición de luz
+const light = document.querySelector('.light');
+
+// Función para reiniciar la animación
+function restartAnimation() {
+    light.style.animation = 'none';
+    void light.offsetWidth; // Truco para reiniciar la animación
+    light.style.animation = 'light 2s ease-out forwards';
+}
+
+// Detectar el evento de desplazamiento y reiniciar la animación
+//window.addEventListener('scroll', restartAnimation);
