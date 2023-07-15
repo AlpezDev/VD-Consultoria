@@ -81,6 +81,7 @@
 
 @media (max-width: 480px) {
     .slick-slide img {
+        margin-top: 10%;
         max-height: auto;
         height: 220px;
     }
