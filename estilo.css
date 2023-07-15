@@ -33,7 +33,7 @@ html {
         .contenedor-header header .logo a {
             font-family: 'Righteous';
             font-size: 36px;
-            color: #1CB698;
+            color: #ffcc00;
             text-decoration: none;
         }
 
@@ -52,11 +52,11 @@ html {
         }
 
             .contenedor-header header nav ul li a:hover {
-                color: #1CB698;
+                color: #ffcc00;
             }
 
 .nav-responsive {
-    background-color: #1CB698;
+    background-color: #ffcc00;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -121,7 +121,7 @@ html {
     }
 
         .contenido-banner .redes a:hover {
-            background-color: #1CB698;
+            background-color: #ffcc00;
         }
 
 .light {
@@ -180,7 +180,7 @@ html {
     }
 
         .nosotros .contenido-seccion p span {
-            color: #1CB698;
+            color: #ffcc00;
             font-weight: bold;
         }
 
@@ -208,12 +208,12 @@ html {
 
                     .nosotros .fila .col ul li strong {
                         display: inline-block;
-                        color: #1CB698;
+                        color: #ffcc00;
                         width: 130px;
                     }
 
                     .nosotros .fila .col ul li span {
-                        background-color: #1CB698;
+                        background-color: #ffcc00;
                         padding: 3px;
                         font-weight: bold;
                         border-radius: 5px;
@@ -238,7 +238,7 @@ html {
                 }
 
                     .nosotros .fila .col .contenedor-intereses .interes:hover {
-                        background-color: #1CB698;
+                        background-color: #ffcc00;
                     }
 
                     .nosotros .fila .col .contenedor-intereses .interes i {
@@ -266,7 +266,7 @@ html {
             left: 0;
             width: 0;
             height: 100%;
-            background-color: #1CB698;
+            background-color: #ffcc00;
             z-index: -1;
             transition: 1s;
         }
@@ -323,7 +323,7 @@ html {
     }
 
     .skills .skill .progreso {
-        background-color: #1CB698;
+        background-color: #ffcc00;
         position: absolute;
         top: 0;
         left: 0;
@@ -334,7 +334,7 @@ html {
         position: absolute;
         height: 40px;
         width: 40px;
-        background-color: #1CB698;
+        background-color: #ffcc00;
         border-radius: 50px;
         line-height: 40px;
         text-align: center;
@@ -548,7 +548,7 @@ html {
             }
 
             .servicios .fila .item .casa {
-                color: #1CB698;
+                color: #ffcc00;
                 font-size: 22px;
                 font-weight: bold;
                 display: block;
@@ -556,7 +556,7 @@ html {
 
             .servicios .fila .item .fecha {
                 display: block;
-                color: #1CB698;
+                color: #ffcc00;
                 margin-bottom: 10px;
             }
 
@@ -565,18 +565,18 @@ html {
             }
 
         .servicios .fila .izq {
-            border-right: 2px solid #1CB698;
+            border-right: 2px solid #ffcc00;
             margin-right: 20px;
         }
 
         .servicios .fila .der {
-            border-left: 2px solid #1CB698;
+            border-left: 2px solid #ffcc00;
             margin-left: 20px;
         }
 
         .servicios .fila .item .conectori {
             height: 2px;
-            background-color: #1CB698;
+            background-color: #ffcc00;
             width: 47px;
             position: absolute;
             top: 50%;
@@ -589,7 +589,7 @@ html {
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
-                background-color: #1CB698;
+                background-color: #ffcc00;
                 float: right;
                 position: relative;
                 bottom: 4px;
@@ -597,7 +597,7 @@ html {
 
         .servicios .fila .item .conectord {
             height: 2px;
-            background-color: #1CB698;
+            background-color: #ffcc00;
             width: 47px;
             position: absolute;
             top: 50%;
@@ -610,7 +610,7 @@ html {
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
-                background-color: #1CB698;
+                background-color: #ffcc00;
                 float: left;
                 position: relative;
                 bottom: 4px;
@@ -742,7 +742,7 @@ html {
             left: 0;
             width: 0;
             height: 100%;
-            background-color: #1CB698;
+            background-color: #ffcc00;
             z-index: -1;
             transition: 1s;
         }
@@ -774,7 +774,7 @@ html {
             }
 
                 .contacto .col .info ul li i {
-                    color: #1CB698;
+                    color: #ffcc00;
                     display: inline-block;
                     margin-right: 20px;
                 }
@@ -810,7 +810,7 @@ footer {
         display: block;
         width: 50px;
         height: 50px;
-        background-color: #1CB698;
+        background-color: #ffcc00;
         color: #fff;
         position: absolute;
         left: 50%;
