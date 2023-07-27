@@ -7,13 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>V&D Consultoría</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                dots: false,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">V&D Consultoría</a>
+                <a href="#">
+                    <div>
+                        <img src="img/encabezado.png" alt="" style="max-width: 100%; height: auto;">
+                    </div>
+                </a>
             </div>
             <nav id="nav">
                 <ul>
@@ -31,29 +56,52 @@
         </header>
     </div>
 
+    <!-- SECCION BANNER -->
+    <div class="slider">
+        <div><img src="img/gallery/bnn0.png"></div>
+        <div><img src="img/gallery/bnn1.png"></div>
+        <div><img src="img/gallery/bnn2.png"></div>
+        <div><img src="img/gallery/bnn3.png"></div>
+        <div><img src="img/gallery/bnn4.png"></div>
+        <div><img src="img/gallery/bnn5.png"></div>
+        <div><img src="img/gallery/bnn6.png"></div>
+        <div><img src="img/gallery/bnn7.png"></div>
+        <div><img src="img/gallery/bnn8.png"></div>
+        <div><img src="img/gallery/bnn9.png"></div>
+    </div>
+
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/logo.png" alt="">
+        <div class="inicio">
+            <div class="contenido-banner active">
+                <div class="light"></div>
+                <div class="contenedor-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <h1>VÁSQUEZ DISTRIBUCIONES CONSULTORÍA</h1>
+                <h2>Creamos moda que te representa</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-rss"></i></a>
+                </div>
+                </div>
             </div>
-            <h1>V&D CONSULTORÍA</h1>
-            <h2>Creamos moda que te representa</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
-            </div>
-        </div>
-    </section>
+</section>    
 
     <!-- SECCION SOBRE MI -->
     <section id="nosotros" class="nosotros">
         <div class="contenido-seccion">
             <h2>Quienes somos</h2>
             <p><span>Hola, somos V&D Consultoría.</span> Una empresa dedicada a brindar soluciones de consultoría y confecciones de ropa a medida para nuestros clientes. Nos enorgullecemos de ofrecer servicios personalizados y de alta calidad que satisfacen las necesidades de nuestros clientes. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y objetivos, y ofrecemos soluciones a medida que les permiten lograr el éxito.</p>
+
+            <h2 style="color: #ffcc00; text-align: left">Misión</h2>
+            <p>Nuestra misión es proporcionar soluciones de consultoría y confecciones de ropa personalizadas y de alta calidad que satisfagan las necesidades únicas de nuestros clientes. Nos esforzamos por brindar servicios excepcionales y establecer relaciones duraderas con nuestros clientes. Nos comprometemos a trabajar con integridad y transparencia en todo lo que hacemos.</p>
+
+            <h2 style="color: #ffcc00; text-align: left">Visión</h2>
+            <p>Nuestra visión es convertirnos en la empresa líder en consultoría y confecciones de ropa personalizadas y de alta calidad. Nos esforzamos por mantenernos a la vanguardia de las tendencias y tecnologías en nuestra industria para ofrecer soluciones innovadoras y eficaces a nuestros clientes. Nos comprometemos a ser una empresa sostenible y responsable socialmente, que contribuya positivamente a la comunidad y al medio ambiente.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -128,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="descargar">
                 Descargar Portafolio de Prendas <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -366,15 +414,17 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="formulario">
+                        <input type="text" name="nombre" placeholder="Tú Nombre">
+                        <input type="text" name="telefono" placeholder="Número telefónico">
+                        <input type="text" name="correo" placeholder="Dirección de correo">
+                        <input type="text" name="tema" placeholder="Tema">
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
@@ -402,7 +452,7 @@
 
     <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba">
+        <a href="#" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
