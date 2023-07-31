@@ -1,4 +1,4 @@
-﻿/* Slider */
+﻿/* Slider 1 */
 .slick-slider {
     position: relative;
     display: block;
@@ -21,7 +21,6 @@
     margin: 0;
     padding: 0;
 }
-
     .slick-list:focus {
         outline: none;
     }
