@@ -43,6 +43,7 @@ html {
         }
 
         .contenedor-header header nav ul li a {
+            font-family: 'Righteous';
             text-align: none;
             color: #fff;
             margin: 0 15px;
@@ -64,65 +65,6 @@ html {
     display: none;
 }
 /* SECCION I N I C I O */
-.inicio {
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/fondo.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenido-banner {
-    position: relative;
-    background: linear-gradient(to bottom right, #ffcc00, #000000 60%);
-    padding: 20px;
-    max-width: 450px;
-    margin: auto;
-    margin-top: 5%;
-    text-align: center;
-    border-radius: 40px;
-    align-self: center;
-}
-
-    .contenido-banner img {
-        margin-top: 40px;
-        /*border: 10px solid #fff;*/
-        display: block;
-        width: 80%;
-        margin: auto;
-        border-radius: 100%;
-    }
-
-    .contenido-banner h1 {
-        margin-top: 40px;
-        font-size: 42px;
-        font-family: 'Righteous';
-    }
-
-    .contenido-banner h2 {
-        font-size: 15px;
-        font-weight: normal;
-    }
-
-    .contenido-banner .redes a {
-        color: #fff;
-        display: inline-block;
-        text-decoration: none;
-        border: 1px solid #fff;
-        border-radius: 100%;
-        width: 42px;
-        height: 42px;
-        line-height: 42px;
-        margin: 40px 5px;
-        font-size: 20px;
-        transition: .3s;
-    }
-
-        .contenido-banner .redes a:hover {
-            background-color: #ffcc00;
-        }
 
 .light {
     position: absolute;
@@ -158,7 +100,7 @@ html {
 .nosotros {
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 20px;
+    padding: 1px 20px;
 }
 
     .nosotros .contenido-seccion {
@@ -174,6 +116,7 @@ html {
     }
 
     .nosotros .contenido-seccion p {
+        font-family: 'Righteous';
         font: 18px;
         line-height: 22px;
         margin-bottom: 20px;
@@ -1153,6 +1096,110 @@ footer {
     right: 0;
 }
 
+/* ------------------------------------------ CARD_INICIO ------------------------------------------------------*/
+.card-inicio {
+    position: relative;
+    margin: 0;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #0000;
+    border-radius: 50px;
+}
+
+    .card-inicio .image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .card-inicio .image img {
+            width: 100%;
+            transition: .5s;
+        }
+
+    .card-inicio:hover .image img {
+        opacity: .5;
+        transform: translateX(30%); /*100%*/
+    }
+
+    .card-inicio .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%; /*100%*/
+        height: 100%;
+        background: #ffcc00;
+        transition: .5s;
+        transform-origin: left;
+        transform: perspective(2000px) rotateY(-90deg);
+        border-radius: 50px;
+    }
+
+    .card-inicio:hover .details {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+
+    .card-inicio .details .center {
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 0%;
+    }
+
+        .card-inicio .details .center h1 {
+            margin: 0;
+            padding: 0;
+            color: #ff3636;
+            line-height: 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+            .card-inicio .details .center h1 span {
+                font-size: 14px;
+                color: #262626;
+            }
+
+        .card-inicio .details .center p {
+            margin: 10px 0;
+            padding: 0;
+            color: #262626;
+        }
+
+        .card-inicio .details .center ul {
+            margin: 10px auto 0;
+            padding: 0;
+            display: table;
+        }
+
+            .card-inicio .details .center ul li {
+                list-style: none;
+                margin: 0 5px;
+                float: left;
+            }
+
+                .card-inicio .details .center ul li a {
+                    display: block;
+                    background: #262626;
+                    border-radius: 50px;
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    transform: .5s;
+                }
+
+                    .card-inicio .details .center ul li a:hover {
+                        background: #ffcc00;
+                    }
+
 
 /* CARDS */
 html {
@@ -1190,7 +1237,6 @@ body {
     position: relative;
     width: 65vmin;
     height: 80vmin;
-
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -1210,7 +1256,7 @@ body {
 .card {
     position: absolute;
     top: 0;
-    left: 0;    
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: #dedede;
@@ -1219,14 +1265,18 @@ body {
     transition: transform .35s ease-out;
     transform: translate(var(--x), var(--y)) scale(.35) rotate(var(--angle));
     will-change: transform;
+    &:hover
 
-    &:hover{
-        transform: scale(1) rotate(0deg);
-        z-index: 1;
-        &:before{
-            opacity: 1;
-        }
-    }
+{
+    transform: scale(1) rotate(0deg);
+    z-index: 1;
+    &:before
+
+{
+    opacity: 1;
+}
+
+}
 }
 
 .card:before {
@@ -1268,8 +1318,8 @@ $goblin: #82BB30;
 $wizard: #4FACFF;
 
 *, *:before, *:after {
-        box-sizing: border-box;
-    }
+    box-sizing: border-box;
+}
 
 body {
     background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
@@ -1280,25 +1330,24 @@ body {
     margin-top: 30px;
 }
 
-.slide-container {
+card-container .slide-container {
     margin: auto;
     width: 100%;
     max-width: fit-content;
     text-align: center;
 }
 
-.wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    &:focus{
-        outline: 0;
+    card-container .slide-container .wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+            &:focus{
+            outline: 0;
+        }
     }
 
-}
 
 
-
-.clash-card {
+card-container .slide-container .clash-card {
     background: white;
     width: 300px;
     display: inline-block;
@@ -1310,7 +1359,7 @@ body {
     z-index: 9999;
 }
 
-.clash-card__image {
+card-container .slide-container .clash-card__image {
     position: relative;
     height: 230px;
     margin-bottom: 35px;
@@ -1318,20 +1367,113 @@ body {
     border-top-right-radius: $border-radius-size;
 }
 
+.clash-banner__image {
+    position: relative;
+    width: max-content;
+    margin-bottom: 35px;
+    border-top-left-radius: $border-radius-size;
+    border-top-right-radius: $border-radius-size;
+}
+
+/* SECCION BANNER RESPONSIVE */
+@media screen and (max-width:1600px) {
+
+    .clash-banner__image {
+        top: 50px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:980px) {
+    
+    .clash-banner__image {
+        top: 150px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .clash-banner__image {
+        top: 100px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .clash-banner__image {
+        top: 90px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .clash-banner__image {
+        top: 80px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:470px) {
+
+    .clash-banner__image {
+        top: 10px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .clash-banner__image {
+        top: 10px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .clash-banner__image {
+        top: 10px;
+        bottom: 50px;
+        position: relative;
+        width: max-content;
+    }
+}
+
 .clash-card__image--barbarian {
     background: url('img/productos/a_seguridad/p4_1.png');
-    img{
-        width: 400px;
-        position: relative;
-        top: -65px;
-        left: -70px;
-    }
+    img
+
+{
+    width: 400px;
+    position: relative;
+    top: -65px;
+    left: -70px;
+}
 
 }
 
 .clash-card__image--archer {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
-    img{
+    img
+
+{
     width: 400px;
     position: absolute;
     top: -34px;
@@ -1342,7 +1484,9 @@ body {
 
 .clash-card__image--giant {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
-    img{
+    img
+
+{
     width: 340px;
     position: absolute;
     top: -30px;
@@ -1353,7 +1497,9 @@ body {
 
 .clash-card__image--goblin {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
-    img{
+    img
+
+{
     width: 370px;
     position: absolute;
     top: -21px;
@@ -1416,7 +1562,9 @@ body {
 
 .clash-card__unit-stats--barbarian {
     background: $barbarian;
-    .one-third{
+    .one-third
+
+{
     border-right: 1px solid #BD7C2F;
 }
 
@@ -1424,7 +1572,9 @@ body {
 
 .clash-card__unit-stats--archer {
     background: $archer;
-    .one-third{
+    .one-third
+
+{
     border-right: 1px solid #D04976;
 }
 
@@ -1432,7 +1582,9 @@ body {
 
 .clash-card__unit-stats--giant {
     background: $giant;
-    .one-third{
+    .one-third
+
+{
     border-right: 1px solid darken($giant, 8%);
 }
 
@@ -1440,7 +1592,9 @@ body {
 
 .clash-card__unit-stats--goblin {
     background: $goblin;
-    .one-third{
+    .one-third
+
+{
     border-right: 1px solid darken($goblin, 6%);
 }
 
@@ -1448,7 +1602,9 @@ body {
 
 .clash-card__unit-stats--wizard {
     background: $wizard;
-    .one-third{
+    .one-third
+
+{
     border-right: 1px solid darken($wizard, 6%);
 }
 
@@ -1459,7 +1615,9 @@ body {
     font-weight: 700;
     border-bottom-left-radius: $border-radius-size;
     border-bottom-right-radius: $border-radius-size;
-    .one-third{
+    .one-third
+
+{
     width: 33%;
     float: left;
     padding: 20px 15px;
@@ -1508,3 +1666,7 @@ sup {
     right: 100px;
     z-index: 999;
 }
+
+
+/* --------------------------------------------------------------------------------- */
+

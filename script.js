@@ -110,8 +110,8 @@ window.onscroll = function () {
     efectoHabilidades();
 }
 window.onload = function () {
-    var banner = document.querySelector('.contenido-banner');
-    banner.classList.add('active');
+    //var banner = document.querySelector('.contenido-banner');
+    //banner.classList.add('active');
 };
 
 
@@ -146,3 +146,6 @@ toggleCards.addEventListener('click', () => {
     });
 
 })();
+
+/** ---- Sobreponer galería de immágenes de los productos ----- */
+

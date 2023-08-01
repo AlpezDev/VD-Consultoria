@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Vasquez V&D</title>
+    <title>Vasquez D&C</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
@@ -16,511 +16,503 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
-
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: true,
-                dots: false,
-                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next">Next</button>'
-            });
-
-            $('.slider2').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: true,
-                dots: false,
-                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next">Next</button>'
-            });
-        });
-    </script>
-
 </head>
-<body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">
-                    <div>
-                        <img src="img/encabezado.png" alt="" style="max-width: 100%; height: auto;">
+                <body>
+                    <!-- MENU ENCABEZADO -->
+                    <div class="contenedor-header">
+                        <header>
+                            <div class="logo">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/encabezado.png" alt="" style="width: 100%;">
+                                    </div>
+                                </a>
+                            </div>
+                            <nav id="nav">
+                                <ul>
+                                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                                    <li><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
+                                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                                    <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
+                                    <li><a href="#productos" onclick="seleccionar()">PRODUCTOS</a></li>
+                                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </header>
                     </div>
-                </a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
-                    <li><a href="#productos" onclick="seleccionar()">PRODUCTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
 
-    <!-- SECCION BANNER -->
-    <div class="slider" id="inicio">
-        <div><img src="img/gallery/bnn0.png"></div>
-        <div><img src="img/gallery/bnn1.png"></div>
-        <div><img src="img/gallery/bnn2.png"></div>
-        <div><img src="img/gallery/bnn3.png"></div>
-        <div><img src="img/gallery/bnn4.png"></div>
-        <div><img src="img/gallery/bnn5.png"></div>
-        <div><img src="img/gallery/bnn6.png"></div>
-        <div><img src="img/gallery/bnn7.png"></div>
-        <div><img src="img/gallery/bnn8.png"></div>
-        <div><img src="img/gallery/bnn9.png"></div>
-    </div>
+                    <!-- SECCION BANNER -->
 
-    <!-- SECCION INICIO -->
-    <section class="inicio">
-        <div class="inicio">
-            <div class="contenido-banner active">
-                <!--<div class="light"></div>-->
-                <div class="contenedor-img">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <h1>VÁSQUEZ DISTRIBUCIONES CONSULTORÍA</h1>
-                <h2>Creamos moda que te representa</h2>
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-skype"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-solid fa-rss"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="slide-container" id="inicio">
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn0.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-    <!-- SECCION SOBRE MI -->
-    <section id="nosotros" class="nosotros">
-        <div class="contenido-seccion">
-            <h2>Quienes somos</h2>
-            <p><span>Hola, somos V&D Consultoría.</span> Una empresa dedicada a brindar soluciones de consultoría y confecciones de ropa a medida para nuestros clientes. Nos enorgullecemos de ofrecer servicios personalizados y de alta calidad que satisfacen las necesidades de nuestros clientes. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y objetivos, y ofrecemos soluciones a medida que les permiten lograr el éxito.</p>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn1.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-            <h2 style="color: #ffcc00; text-align: left">Misión</h2>
-            <p>Nuestra misión es proporcionar soluciones de consultoría y confecciones de ropa personalizadas y de alta calidad que satisfagan las necesidades únicas de nuestros clientes. Nos esforzamos por brindar servicios excepcionales y establecer relaciones duraderas con nuestros clientes. Nos comprometemos a trabajar con integridad y transparencia en todo lo que hacemos.</p>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn2.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-            <h2 style="color: #ffcc00; text-align: left">Visión</h2>
-            <p>Nuestra visión es convertirnos en la empresa líder en consultoría y confecciones de ropa personalizadas y de alta calidad. Nos esforzamos por mantenernos a la vanguardia de las tendencias y tecnologías en nuestra industria para ofrecer soluciones innovadoras y eficaces a nuestros clientes. Nos comprometemos a ser una empresa sostenible y responsable socialmente, que contribuya positivamente a la comunidad y al medio ambiente.</p>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn3.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos de la Empresa</h3>
-                    <ul>
-                        <li>
-                            <strong>Razón social</strong>
-                            Vásquez Consultoría y Distribuciones
-                        </li>
-                        <li>
-                            <strong>Teléfonos</strong>
-                            (607) 693 2080
-                            +57 (312) 341 1143
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            j.vasquez.distribuidora@gmail.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            www.vdconsultoria.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Calle 67B #27-47 Bucaramanga, Colombia
-                        </li>
-                        <li>
-                            <strong>Actividad económica</strong>
-                            <span>CONSULTORÍA Y CONFECCIÓN</span>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn4.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-                <!-- AREAS -->
-                <div class="col">
-                    <h3>Áreas</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-sharp fa-solid fa-crop-simple"></i>
-                            <span>DISEÑO</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-shirt"></i>
-                            <span>CONFECCIÓN</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-sharp fa-solid fa-person-circle-question"></i>
-                            <span>CONSULTORÍA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <span>MARKETING</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-comments-dollar"></i>
-                            <span>VENTAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-shop"></i>
-                            <span>MERCADO</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-bars-progress"></i>
-                            <span>GESTIÓN</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-connectdevelop"></i>
-                            <span>WEB</span>
-                        </div>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn5.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-                    </div>
-                </div>
-            </div>
-            <button id="descargar">
-                Descargar Portafolio de Prendas <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-        </div>
-    </section>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn6.png" alt="" />
+                        </div> <!-- end clash banner__image-->
 
-    <!-- SECCION HABILIDADES -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Técnicas</h3>
-                    <div class="skill">
-                        <span>Diseño de moda</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn7.png" alt="" />
+                        </div> <!-- end clash banner__image-->
+
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn8.png" alt="" />
+                        </div> <!-- end clash banner__image-->
+
+                        <div class="clash-banner__image">
+                            <img src="img/gallery/bnn9.png" alt="" />
+                        </div> <!-- end clash banner__image-->
+
+                    </div> <!-- end container -->
+
+                    <!-- SECCION CARD-INICIO -->
+                    <section class="inicio"  style="background-color: #1e2326">
+                        <div class="card-inicio">
+                            <div class="image">
+                                <img src="img/logo.png" />
+                            </div>
+                            <div class="details">
+                                <div class="center">
+                                    <div class="image">
+                                        <img src="img/VDC_negro.png" style="width: 80%; height: 80%; transform: translateX(10%); opacity: 1" />
+                                    </div>
+                                    <h1 style="color: #ffcc00; font-family: 'Righteous'">VÁSQUEZ DISTRIBUCIONES CONSULTORÍA</h1>
+                                    <p style="font-family: 'Righteous'">Creamos moda que te representa.</p>
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Confección</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
+                    </section>
+
+                    <!-- SECCION SOBRE MI -->
+                    <section id="nosotros" class="nosotros">
+                        <div class="contenido-seccion">
+                            <h2>Quienes somos</h2>
+                            <p>Hola, somos <span style="color: #ffcc00">Vasquez Distribuidora y Consultoría.</span> Una empresa dedicada a brindar soluciones de consultoría y confecciones de ropa de distintas áreas para nuestros clientes. Nos enorgullecemos de ofrecer servicios personalizados y de alta calidad que satisfacen las necesidades de nuestros clientes. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y objetivos, y ofrecemos soluciones a medida que les permiten lograr el éxito.</p>
+
+                            <h2 style="color: #ffcc00; text-align: left">Misión</h2>
+                            <p>Nuestra misión es proporcionar soluciones de consultoría y confecciones de ropa personalizadas y de alta calidad que satisfagan las necesidades únicas de nuestros clientes. Nos esforzamos por brindar servicios excepcionales y establecer relaciones duraderas con nuestros clientes. Nos comprometemos a trabajar con integridad y transparencia en todo lo que hacemos.</p>
+
+                            <h2 style="color: #ffcc00; text-align: left">Visión</h2>
+                            <p>Nuestra visión es convertirnos en la empresa líder en consultoría y confecciones de ropa de alta calidad. Nos esforzamos por mantenernos a la vanguardia de las tendencias y tecnologías en nuestra industria para ofrecer soluciones innovadoras y eficaces a nuestros clientes. Nos comprometemos a ser una empresa sostenible y responsable socialmente, que contribuya positivamente a la comunidad y al medio ambiente.</p>
+
+                            <div class="fila">
+                                <!-- datos personales -->
+                                <div class="col">
+                                    <h3>Datos de la Empresa</h3>
+                                    <ul>
+                                        <li>
+                                            <strong>Razón social</strong>
+                                            Vásquez Consultoría y Distribuciones
+                                        </li>
+                                        <li>
+                                            <strong>Teléfonos</strong>
+                                            (607) 693 2080
+                                            +57 (312) 341 1143
+                                        </li>
+                                        <li>
+                                            <strong>Email</strong>
+                                            j.vasquez.distribuidora@gmail.com / j.vasquezdc@gmail.com
+                                        </li>
+                                        <li>
+                                            <strong>Website</strong>
+                                            www.vdconsultoria.com
+                                        </li>
+                                        <li>
+                                            <strong>Dirección</strong>
+                                            Calle 67B #27-47 Bucaramanga, Colombia
+                                        </li>
+                                        <li>
+                                            <strong>Actividad económica</strong>
+                                            <span>CONSULTORÍA Y CONFECCIÓN</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- AREAS -->
+                                <div class="col">
+                                    <h3>Áreas</h3>
+                                    <div class="contenedor-intereses">
+                                        <div class="interes">
+                                            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                                            <span>DISEÑO</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-shirt"></i>
+                                            <span>CONFECCIÓN</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-sharp fa-solid fa-person-circle-question"></i>
+                                            <span>CONSULTORÍA</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-chart-simple"></i>
+                                            <span>MARKETING</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-comments-dollar"></i>
+                                            <span>VENTAS</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-gavel"></i>
+                                            <span>ASESORÍA</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-bars-progress"></i>
+                                            <span>GESTIÓN</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-brands fa-connectdevelop"></i>
+                                            <span>WEB</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="descargar">
+                                Descargar Portafolio de Prendas <i class="fa-solid fa-download"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- SECCION HABILIDADES -->
+                    <section class="skills" id="skills">
+                        <div class="contenido-seccion">
+                            <h2>Habilidades</h2>
+                            <div class="fila">
+                                <!-- Technical Skill -->
+                                <div class="col">
+                                    <h3>Técnicas</h3>
+                                    <div class="skill">
+                                        <span>Diseño de moda</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>75%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Confección</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>100%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Investigación de mercado</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Gestión de la cadena de suministro</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>81%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Diseño gráfico y web</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Professional Skills -->
+                                <div class="col">
+                                    <h3>Profesionales</h3>
+                                    <div class="skill">
+                                        <span>Consultoría de moda</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Marketing y ventas</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>70%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Sostenibilidad</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>99%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Habilidades interpersonales</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>100%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Creatividad</span>
+                                        <div class="barra-skill">
+                                            <div class="progreso">
+                                                <span>94%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Investigación de mercado</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
+                    </section>
+
+                    <!-- SECCION SERVICIOS -->
+                    <section id="servicios" class="servicios">
+                        <div class="contenido-seccion">
+                            <h2>Servicios</h2>
+                            <div class="fila">
+                                <div class="col izquierda">
+                                    <h3>Consultoría</h3>
+                                    <div class="item izq">
+                                        <h4>Análisis de estilo personalizado</h4>
+                                        <span class="casa">Evaluación de estilo personal</span>
+                                        <span class="fecha">Asesoramiento de estilo</span>
+                                        <p>Ayudamos a nuestros clientes a evaluar su estilo personal actual y a descubrir qué prendas les quedan mejor.</p>
+                                        <p>Proporcionamos asesoramiento personalizado sobre la selección de ropa para ayudar a nuestros clientes a crear un guardarropa que refleje su personalidad y estilo.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>Análisis de tendencias de la industria</h4>
+                                        <span class="casa">Investigación de tendencias</span>
+                                        <span class="fecha">Asesoramiento en diseño</span>
+                                        <p>Realizamos investigaciones sobre las tendencias de la moda y la confección para ayudar a nuestros clientes a mantenerse al día y ofrecer productos atractivos.</p>
+                                        <p>Proporcionamos asesoramiento en diseño y desarrollo de productos para ayudar a las empresas a crear productos que se ajusten a las últimas tendencias de la industria.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col derecha">
+                                    <h3>Confección</h3>
+                                    <div class="item der">
+                                        <h4>Ropa a medida</h4>
+                                        <span class="casa">Diseño personalizado</span>
+                                        <span class="fecha">Ajustes y modificaciones</span>
+                                        <p>Diseñamos ropa a medida para nuestros clientes, teniendo en cuenta sus necesidades y preferencias.</p>
+                                        <p>Realizamos ajustes y modificaciones en la ropa para asegurarnos de que se ajuste perfectamente al cuerpo de nuestros clientes.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item der">
+                                        <h4>Producción</h4>
+                                        <span class="casa">Producción con capacidad de alta calidad</span>
+                                        <p>Producción de ropa de alta calidad, garantizando un acabado cuidado y atención a los detalles.</p>
+                                        <p>Realizamos un riguroso control de calidad para garantizar que cada prenda cumpla con los estándares de calidad requeridos.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Gestión de la cadena de suministro</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
+                    </section>
+
+                    <!-- SECCION PORTFOLIO -->
+                    <section id="productos" class="productos">
+
+                        <div class="contenido-seccion">
+                            <h2>Productos</h2>
+                            <div class="galeria">
+                                <div class="proyecto toggle-cards">
+                                    <img src="img/p1.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Diseño Creativo</h3>
+                                        <p>Mostrar Catálogo</p>
+                                    </div>
+                                </div>
+                                <div class="card-container">
+                                    <div class="slide-container">
+                                        <div class="wrapper">
+                                            <div class="clash-card barbarian">
+                                                <div class="clash-card__image">
+                                                    <img src="img/productos/a_seguridad/p4_2.jpg" id="p4_2" />
+                                                </div>
+                                                <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
+                                            </div> <!-- end clash-card barbarian-->
+                                        </div> <!-- end wrapper -->
+
+                                        <div class="wrapper">
+                                            <div class="clash-card barbarian">
+                                                <div class="clash-card__image">
+                                                    <img src="img/productos/a_seguridad/p4_3.jpg" id="p4_3" />
+                                                </div>
+                                                <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
+                                            </div> <!-- end clash-card barbarian-->
+                                        </div> <!-- end wrapper -->
+
+                                        <div class="wrapper">
+                                            <div class="clash-card barbarian">
+                                                <div class="clash-card__image">
+                                                    <img src="img/productos/a_seguridad/p4_4.jpg" id="p4_4" />
+                                                </div>
+                                                <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
+                                            </div> <!-- end clash-card barbarian-->
+                                        </div> <!-- end wrapper -->
+                                    </div> <!-- end container -->
+                                </div>
+                                <!--<div class="card-container">
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_1.jpg'); --angle: -5deg; --x: -5%; --y: 3%; --caption: ''"></div>
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_2.jpg'); --angle: -1deg; --x: -20%; --y: -32%; --caption: ''"></div>
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_3.jpg'); --angle: -4deg; --x: -30%; --y: -7%; --caption: ''"></div>
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_4.png'); --angle: 7deg; --x: 0%; --y: -19%; --caption: ''"></div>
+                                </div>-->
+
+                                <div class="proyecto">
+                                    <img src="img/p2.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Diseño Creativo</h3>
+                                        <p>Mostrar Catálogo</p>
+                                    </div>
+                                </div>
+                                <div class="proyecto">
+                                    <img src="img/p3.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Diseño Creativo</h3>
+                                        <p>Mostrar Catálogo</p>
+                                    </div>
+                                </div>
+                                <div class="proyecto toggle-cards">
+                                    <img src="img/p4.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Diseño Creativo</h3>
+                                        <p>Mostrar Catálogo</p>
+                                    </div>
+                                </div>
+                                <div class="card-container">
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_1.jpg'); --angle: -5deg; --x: -5%; --y: 3%; --caption: ''"></div>
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_2.jpg'); --angle: -1deg; --x: -20%; --y: -32%; --caption: ''"></div>
+                                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_3.jpg'); --angle: -4deg; --x: -30%; --y: -7%; --caption: ''"></div>
+                                    <!-- <div class="card" style="--image: url('img/productos/a_seguridad/p4_4.png'); --angle: 7deg; --x: 0%; --y: -19%; --caption: ''"></div> -->
+                                </div>
+
+
+                                <div class="proyecto">
+                                    <img src="img/p5.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Diseño Creativo</h3>
+                                        <p>Consultar</p>
+                                    </div>
+                                </div>
+                                <div class="proyecto">
+                                    <img src="img/p6.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Otros Productos</h3>
+                                        <p>Fotografía</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Diseño gráfico y web</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Profesionales</h3>
-                    <div class="skill">
-                        <span>Consultoría de moda</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Marketing y ventas</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Sostenibilidad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Habilidades interpersonales</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </section>
 
-    <!-- SECCION SERVICIOS -->
-    <section id="servicios" class="servicios">
-        <div class="contenido-seccion">
-            <h2>Servicios</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Consultoría</h3>
-                    <div class="item izq">
-                        <h4>Análisis de estilo personalizado</h4>
-                        <span class="casa">Evaluación de estilo personal</span>
-                        <span class="fecha">Asesoramiento de estilo</span>
-                        <p>Ayudamos a nuestros clientes a evaluar su estilo personal actual y a descubrir qué prendas y accesorios les quedan mejor.</p>
-                        <p>Proporcionamos asesoramiento personalizado sobre la selección de ropa y accesorios para ayudar a nuestros clientes a crear un guardarropa que refleje su personalidad y estilo.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Asesoramiento de imagen de marca</h4>
-                        <span class="casa">Selección de ropa y accesorios</span>
-                        <span class="fecha">Personalización de uniformes</span>
-                        <p>Ayudamos a las empresas a seleccionar la ropa y los accesorios adecuados para representar su marca y crear una imagen coherente.</p>
-                        <p>Creamos uniformes personalizados para empresas, teniendo en cuenta el estilo y la imagen de marca.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Análisis de tendencias de la industria</h4>
-                        <span class="casa">Investigación de tendencias</span>
-                        <span class="fecha">Asesoramiento en diseño</span>
-                        <p>Realizamos investigaciones sobre las tendencias de la moda y la confección para ayudar a nuestros clientes a mantenerse al día y ofrecer productos atractivos.</p>
-                        <p>Proporcionamos asesoramiento en diseño y desarrollo de productos para ayudar a las empresas a crear productos que se ajusten a las últimas tendencias de la industria.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
+                    <!-- SECCION CONTACTO -->
+                    <section id="contacto" class="contacto">
+                        <div class="contenido-seccion">
+                            <h2>CONTACTO</h2>
+                            <div class="fila">
+                                <!-- Formulario -->
+                                <div class="col">
+                                    <form id="formulario">
+                                        <input type="text" name="nombre" placeholder="Tú Nombre">
+                                            <input type="text" name="telefono" placeholder="Número telefónico">
+                                                <input type="text" name="correo" placeholder="Dirección de correo">
+                                                    <input type="text" name="tema" placeholder="Tema">
+                                                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                                        <button type="submit">
+                                                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                                                            <span class="overlay"></span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                                <!-- Mapa -->
+                                                <div class="col">
+                                                    <img src="img/ubicacion.png" alt="">
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa-solid fa-location-dot"></i>
+                                                                    Calle 67B #27-47, Bucaramanga- Colombia
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-mobile-screen"></i>
+                                                                    Llamanos: +57 3123411143 - (607) 693 2080
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa-solid fa-envelope"></i>
+                                                                    Email: j.vasquez.distribuidora@gmail.com j.vasquezdc@gmail.com
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
 
-                <div class="col derecha">
-                    <h3>Confección</h3>
-                    <div class="item der">
-                        <h4>Ropa a medida</h4>
-                        <span class="casa">Diseño personalizado</span>
-                        <span class="fecha">Ajustes y modificaciones</span>
-                        <p>Diseñamos ropa a medida para nuestros clientes, teniendo en cuenta sus necesidades y preferencias.</p>
-                        <p>Realizamos ajustes y modificaciones en la ropa para asegurarnos de que se ajuste perfectamente al cuerpo de nuestros clientes.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Diseño de ropa</h4>
-                        <span class="casa">Diseño personalizado</span>
-                        <span class="fecha">Desarrollo de prototipos</span>
-                        <p>Creamos diseños únicos y personalizados de ropa y accesorios para empresas y particulares, adaptándonos a sus necesidades y preferencias.</p>
-                        <p>Desarrollamos prototipos de ropa y accesorios para ayudar a las empresas a visualizar sus diseños antes de la producción en masa.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Producción en masa</h4>
-                        <span class="casa">Producción de alta calidad</span>
-                        <span class="fecha">Control de calidad</span>
-                        <p>Producción en masa de ropa y accesorios de alta calidad, garantizando un acabado cuidado y atención a los detalles.</p>
-                        <p>Realizamos un riguroso control de calidad para garantizar que cada prenda cumpla con los estándares de calidad requeridos.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                                    <!-- footer -->
+                                    <footer>
+                                        <a href="#" class="arriba">
+                                            <i class="fa-solid fa-angles-up"></i>
+                                        </a>
+                                        <div class="redes">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-solid fa-rss"></i></a>
+                                        </div>
+                                    </footer>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="productos" class="productos">
-
-            <div class="slide-container">
-                <div class="wrapper">
-                    <div class="clash-card barbarian">
-                        <div class="clash-card__image">
-                            <img src="img/productos/a_seguridad/p4_2.jpg" alt="barbarian" />
-                        </div>
-                        <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
-                    </div> <!-- end clash-card barbarian-->
-                </div> <!-- end wrapper -->
-
-                <div class="wrapper">
-                    <div class="clash-card barbarian">
-                        <div class="clash-card__image">
-                            <img src="img/productos/a_seguridad/p4_3.jpg" alt="barbarian" />
-                        </div>
-                        <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
-                    </div> <!-- end clash-card barbarian-->
-                </div> <!-- end wrapper -->
-
-                <div class="wrapper">
-                    <div class="clash-card barbarian">
-                        <div class="clash-card__image">
-                            <img src="img/productos/a_seguridad/p4_4.jpg" alt="barbarian" />
-                        </div>
-                        <div class="clash-card__unit-name"><br /><br /><br /><br /><br /><br /></div>
-                    </div> <!-- end clash-card barbarian-->
-                </div> <!-- end wrapper -->                
-            </div> <!-- end container -->
-
-        <div class="contenido-seccion">
-            <h2>Productos</h2>
-            <div class="galeria">
-                <div class="proyecto toggle-cards">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Mostrar Catálogo</p>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_1.jpg'); --angle: -5deg; --x: -5%; --y: 3%; --caption: ''"></div>
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_2.jpg'); --angle: -1deg; --x: -20%; --y: -32%; --caption: ''"></div>
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_3.jpg'); --angle: -4deg; --x: -30%; --y: -7%; --caption: ''"></div>
-                    <!-- <div class="card" style="--image: url('img/productos/a_seguridad/p4_4.png'); --angle: 7deg; --x: 0%; --y: -19%; --caption: ''"></div> -->
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Mostrar Catálogo</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Mostrar Catálogo</p>
-                    </div>
-                </div>
-                <div class="proyecto toggle-cards">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Mostrar Catálogo</p>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_1.jpg'); --angle: -5deg; --x: -5%; --y: 3%; --caption: ''"></div>
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_2.jpg'); --angle: -1deg; --x: -20%; --y: -32%; --caption: ''"></div>
-                    <div class="card" style="--image: url('img/productos/a_seguridad/p4_3.jpg'); --angle: -4deg; --x: -30%; --y: -7%; --caption: ''"></div>
-                    <!-- <div class="card" style="--image: url('img/productos/a_seguridad/p4_4.png'); --angle: 7deg; --x: 0%; --y: -19%; --caption: ''"></div> -->
-                </div>
-
-
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Consultar</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Otros Productos</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form id="formulario">
-                        <input type="text" name="nombre" placeholder="Tú Nombre">
-                        <input type="text" name="telefono" placeholder="Número telefónico">
-                        <input type="text" name="correo" placeholder="Dirección de correo">
-                        <input type="text" name="tema" placeholder="Tema">
-                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button type="submit">
-                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-                    </form>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Calle 67B #27-47, Bucaramanga- Colombia
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: +57 3123411143 - (607) 693 2080
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: j.vasquez.distribuidora@Gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <a href="#" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
-        </div>
-    </footer>
-
-    <!-- JavaScript Libraries -->
-    <script src="script.js"></script>
-</body>
+                                    <!-- JavaScript Libraries -->
+                                    <script src="script.js"></script>
+    </body>
 </html>
