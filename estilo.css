@@ -1103,7 +1103,7 @@ footer {
             opacity: 1;
         }
 
-/*Transición cuando se expande la imágen activa*/
+/*Transiciï¿½n cuando se expande la imï¿½gen activa*/
 .gallery-container {
     position: relative;
     max-width: 800px;
@@ -1282,7 +1282,8 @@ body {
 
 .slide-container {
     margin: auto;
-    width: 600px;
+    width: 100%;
+    max-width: fit-content;
     text-align: center;
 }
 
@@ -1316,7 +1317,7 @@ body {
     border-top-left-radius: $border-radius-size;
     border-top-right-radius: $border-radius-size;
 }
-/*
+
 .clash-card__image--barbarian {
     background: url('img/productos/a_seguridad/p4_1.png');
     img{
@@ -1326,7 +1327,7 @@ body {
         left: -70px;
     }
 
-}*/
+}
 
 .clash-card__image--archer {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
