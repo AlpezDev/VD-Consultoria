@@ -1265,18 +1265,13 @@ body {
     transition: transform .35s ease-out;
     transform: translate(var(--x), var(--y)) scale(.35) rotate(var(--angle));
     will-change: transform;
-    &:hover
-
-{
-    transform: scale(1) rotate(0deg);
-    z-index: 1;
-    &:before
-
-{
-    opacity: 1;
-}
-
-}
+        &:hover{
+            transform: scale(1) rotate(0deg);
+            z-index: 1;
+        &:before{
+            opacity: 1;
+        }
+    }
 }
 
 .card:before {
@@ -1376,17 +1371,36 @@ body {
 
     .card-productos.show {
         opacity: 1;
-        height: 649px;
+        height: auto;
         width: 500px;
         max-width: 100%;
         transition: opacity 0.5s ease, max-width 0.5s ease, height 0s linear 0.5s;
     }
 
-    .card-productos.slide-productos {
-        margin: auto;
+    .slide-productos {
+        /*margin: auto;
+        height: 100%;
         width: 100%;
         max-width: fit-content;
-        text-align: center;
+        text-align: center;*/
+        position: relative;
+        width: 65vmin;
+        height: 80vmin;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, height 0s linear 0.5s, max-width 0s linear 0.5s;
+        margin: 0 auto;
+
+        max-width: fit-content;
+    }
+
+    .slide-productos.show {
+        opacity: 1;
+        height: auto;
+        width: 500px;
+        max-width: 100%;
+        transition: opacity 0.5s ease, max-width 0.5s ease, height 0s linear 0.5s;
     }
 
     .slide-productos .wrapper {
@@ -1397,7 +1411,7 @@ body {
         }
     }
 
-.slide-productos.clash-card {
+.slide-productos .clash-card {
     background: white;
     width: 300px;
     display: inline-block;
@@ -1427,6 +1441,15 @@ body {
 .clash-banner__image {
     position: relative;
     width: max-content;
+    margin-bottom: 35px;
+    border-top-left-radius: $border-radius-size;
+    border-top-right-radius: $border-radius-size;
+}
+
+.clash-productos__image {
+    position: relative;
+    height: 50px;
+    width: 50px;
     margin-bottom: 35px;
     border-top-left-radius: $border-radius-size;
     border-top-right-radius: $border-radius-size;

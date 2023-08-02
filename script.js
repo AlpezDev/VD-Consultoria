@@ -118,7 +118,7 @@ window.onload = function () {
 /*---CARDS----*/
 
 const toggleCards = document.querySelector('.toggle-cards');
-const cardContainer = document.querySelector('.card-productos');
+const cardContainer = document.querySelector('.slide-productos');
 
 toggleCards.addEventListener('click', () => {
     cardContainer.classList.toggle('show');
