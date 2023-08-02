@@ -1330,14 +1330,14 @@ body {
     margin-top: 30px;
 }
 
-card-container .slide-container {
+.slide-container {
     margin: auto;
     width: 100%;
     max-width: fit-content;
     text-align: center;
 }
 
-    card-container .slide-container .wrapper {
+    .slide-container .wrapper {
         padding-top: 40px;
         padding-bottom: 40px;
             &:focus{
@@ -1345,26 +1345,83 @@ card-container .slide-container {
         }
     }
 
-
-
-card-container .slide-container .clash-card {
+.slide-container .clash-card {
     background: white;
     width: 300px;
     display: inline-block;
     margin: auto;
-    border-radius: $border-radius-size + 5;
     position: relative;
     text-align: center;
     box-shadow: -1px 15px 30px -12px black;
     z-index: 9999;
 }
 
-card-container .slide-container .clash-card__image {
+.slide-container .clash-card__image {
     position: relative;
     height: 230px;
     margin-bottom: 35px;
-    border-top-left-radius: $border-radius-size;
-    border-top-right-radius: $border-radius-size;
+}
+
+.card-productos {
+    position: relative;
+    width: 65vmin;
+    height: 80vmin;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0s linear 0.5s, max-width 0s linear 0.5s;
+    max-width: 0%;
+    margin: 0 auto;
+}
+
+    .card-productos.show {
+        opacity: 1;
+        height: 649px;
+        width: 500px;
+        max-width: 100%;
+        transition: opacity 0.5s ease, max-width 0.5s ease, height 0s linear 0.5s;
+    }
+
+    .card-productos.slide-productos {
+        margin: auto;
+        width: 100%;
+        max-width: fit-content;
+        text-align: center;
+    }
+
+    .slide-productos .wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+            &:focus{
+            outline: 0;
+        }
+    }
+
+.slide-productos.clash-card {
+    background: white;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+}
+
+.slide-productos .clash-card__image {
+    position: relative;
+    width: 40px;
+    margin-bottom: 35px;
+}
+
+.slide-productos .clash-card__image--barbarian {
+    background: url('img/productos/a_seguridad/p4_1.png');
+    img{
+        width: 400px;
+        position: relative;
+        top: -65px;
+        left: -70px;
+    }
 }
 
 .clash-banner__image {
@@ -1458,15 +1515,12 @@ card-container .slide-container .clash-card__image {
 
 .clash-card__image--barbarian {
     background: url('img/productos/a_seguridad/p4_1.png');
-    img
-
-{
-    width: 400px;
-    position: relative;
-    top: -65px;
-    left: -70px;
-}
-
+    img{
+        width: 400px;
+        position: relative;
+        top: -65px;
+        left: -70px;
+    }
 }
 
 .clash-card__image--archer {

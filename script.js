@@ -118,14 +118,36 @@ window.onload = function () {
 /*---CARDS----*/
 
 const toggleCards = document.querySelector('.toggle-cards');
-const cardContainer = document.querySelector('.card-container');
+const cardContainer = document.querySelector('.card-productos');
 
 toggleCards.addEventListener('click', () => {
     cardContainer.classList.toggle('show');
+    console.log("Escriboooo");
 });
 
 
-/** -----------------CARD PRUEBA ------------------------------ */
+/** -----------------CARD GALERÍA PRODUCTOS ------------------------ */
+(function () {
+
+    var slideProducto = $('.slide-productos');
+
+    slideProducto.slick();
+
+    $('.clash-card__image img').hide();
+    $('.slick-active').find('.clash-card img').fadeIn(200);
+
+    // On before slide change
+    slideProducto.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $('.slick-active').find('.clash-card img').fadeOut(1000);
+    });
+
+    // On after slide change
+    slideProducto.on('afterChange', function (event, slick, currentSlide) {
+        $('.slick-active').find('.clash-card img').fadeIn(200);
+    });
+
+})();
+
 (function () {
 
     var slideContainer = $('.slide-container');
@@ -146,6 +168,3 @@ toggleCards.addEventListener('click', () => {
     });
 
 })();
-
-/** ---- Sobreponer galería de immágenes de los productos ----- */
-
