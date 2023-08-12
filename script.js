@@ -117,35 +117,68 @@ window.onload = function () {
 
 /*---CARDS----*/
 
-const toggleCards = document.querySelector('.toggle-cards');
-const cardContainer = document.querySelector('.slide-productos');
+const toggleCards1 = document.querySelector('.toggle-cards1');
+const toggleCards2 = document.querySelector('.toggle-cards2');
+const toggleCards3 = document.querySelector('.toggle-cards3');
+const toggleCards4 = document.querySelector('.toggle-cards4');
+const cardContainer1 = document.querySelector('.slide-productos1');
+const cardContainer2 = document.querySelector('.slide-productos2');
+const cardContainer3 = document.querySelector('.slide-productos3');
+const cardContainer4 = document.querySelector('.slide-productos4');
 
-toggleCards.addEventListener('click', () => {
-    cardContainer.classList.toggle('show');
+toggleCards1.addEventListener('click', () => {
+    cardContainer1.classList.toggle('show');
+    console.log("Escriboooo");
+});
+
+toggleCards2.addEventListener('click', () => {
+    cardContainer2.classList.toggle('show');
+    console.log("Escriboooo");
+});
+
+toggleCards3.addEventListener('click', () => {
+    cardContainer3.classList.toggle('show');
+    console.log("Escriboooo");
+});
+
+toggleCards4.addEventListener('click', () => {
+    cardContainer4.classList.toggle('show');
     console.log("Escriboooo");
 });
 
 
 /** -----------------CARD GALERÍA PRODUCTOS ------------------------ */
+
 (function () {
-
-    var slideProducto = $('.slide-productos');
-
+    var slideProducto = $('.slide-productos1');
     slideProducto.slick();
+})();
 
-    $('.clash-card__image img').hide();
-    $('.slick-active').find('.clash-card img').fadeIn(200);
+(function () {
+    var slideProducto = $('.slide-productos2');
+    slideProducto.slick();
+})();
 
-    // On before slide change
-    slideProducto.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $('.slick-active').find('.clash-card img').fadeOut(1000);
-    });
+(function () {
+    var slideProducto = $('.slide-productos3');
+    slideProducto.slick();
+})();
 
-    // On after slide change
-    slideProducto.on('afterChange', function (event, slick, currentSlide) {
-        $('.slick-active').find('.clash-card img').fadeIn(200);
-    });
+(function () {
+    var slideProducto = $('.slide-productos4');
+    slideProducto.slick();
+    // $('.clash-card__image img').hide();
+    // $('.slick-active').find('.clash-card img').fadeIn(200);
 
+    // // On before slide change
+    // slideProducto.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    //     $('.slick-active').find('.clash-card img').fadeOut(1000);
+    // });
+
+    // // On after slide change
+    // slideProducto.on('afterChange', function (event, slick, currentSlide) {
+    //     $('.slick-active').find('.clash-card img').fadeIn(200);
+    // });
 })();
 
 (function () {
